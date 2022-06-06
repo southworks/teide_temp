@@ -73,6 +73,7 @@ jobs:
               environment_url: '${{ secrets.ENVIRONMENT_URL }}',
               source_branch: '${{ secrets.SOURCE_BRANCH }}',
               branch_to_create: '${{ secrets.BRANCH_TO_CREATE }}',
+              allow_empty_commit: 'true',
               commit_message: '${{ github.event.inputs.commit_message }}'
             }
             let id = await helper.dispatchWorkflow(github, context, 'export-unpack-commit-solution.yml', ref, params)
