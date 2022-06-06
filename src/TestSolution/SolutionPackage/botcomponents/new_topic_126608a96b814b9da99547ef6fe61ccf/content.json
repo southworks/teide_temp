@@ -10,7 +10,7 @@
       "id": "new_topic_126608a96b814b9da99547ef6fe61ccf",
       "displayName": "Test Topic",
       "createdTime": "2022-06-06T00:13:29.4327396Z",
-      "updatedTime": "2022-06-06T02:28:05.354441Z",
+      "updatedTime": "2022-06-06T11:41:46.2082276Z",
       "createdUserId": "566328ac-2347-4d6f-83be-268a91880fff",
       "updatedUserId": "566328ac-2347-4d6f-83be-268a91880fff"
     }
@@ -28,13 +28,19 @@
         {
           "botMessageId": "39f23cbd-bd45-4325-8721-e13d35c2ff76",
           "nodeType": "BotMessageNode",
-          "id": "6248c9da-4c4f-4e88-828b-2b0e31fcd86e"
+          "id": "6248c9da-4c4f-4e88-828b-2b0e31fcd86e",
+          "defaultTargetNodeId": "031a3c2c-15ee-4797-a141-25db64a3c51c"
+        },
+        {
+          "botMessageId": "6c36c3fe-fd76-4838-bf3c-e71fcd475a36",
+          "nodeType": "BotMessageNode",
+          "id": "031a3c2c-15ee-4797-a141-25db64a3c51c"
         }
       ],
       "id": "new_topic_126608a96b814b9da99547ef6fe61ccf",
       "displayName": "Untitled",
       "createdTime": "2022-06-06T00:13:29.4327396Z",
-      "updatedTime": "2022-06-06T02:28:05.354441Z",
+      "updatedTime": "2022-06-06T11:41:46.2082276Z",
       "createdUserId": "566328ac-2347-4d6f-83be-268a91880fff",
       "updatedUserId": "566328ac-2347-4d6f-83be-268a91880fff"
     }
@@ -61,6 +67,19 @@
       "id": "39f23cbd-bd45-4325-8721-e13d35c2ff76",
       "createdTime": "2022-06-06T02:27:51.816Z",
       "updatedTime": "2022-06-06T02:27:51.816Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Feature #2 added."
+        }
+      },
+      "id": "6c36c3fe-fd76-4838-bf3c-e71fcd475a36",
+      "createdTime": "2022-06-06T11:41:32.105Z",
+      "updatedTime": "2022-06-06T11:41:32.105Z",
       "createdUserId": "user-0",
       "updatedUserId": "user-0"
     }
