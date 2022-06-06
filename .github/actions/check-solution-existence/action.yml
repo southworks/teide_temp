@@ -57,7 +57,7 @@ runs:
 
         # Check if the solution unique name exists
         For ($i=5; $i -lt $lines.Length - 1; $i++) {
-          $check_solution_exists = $lines[i] -like ${{ inputs.solution_name }}
+          $check_solution_exists = $lines[$i] -like ${{ inputs.solution_name }}
         }
 
         # Return the flag
