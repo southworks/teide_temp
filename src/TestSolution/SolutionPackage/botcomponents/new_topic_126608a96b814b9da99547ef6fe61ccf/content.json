@@ -10,7 +10,7 @@
       "id": "new_topic_126608a96b814b9da99547ef6fe61ccf",
       "displayName": "Test Topic",
       "createdTime": "2022-06-06T00:13:29.4327396Z",
-      "updatedTime": "2022-06-06T00:13:49.131882Z",
+      "updatedTime": "2022-06-06T02:28:05.354441Z",
       "createdUserId": "566328ac-2347-4d6f-83be-268a91880fff",
       "updatedUserId": "566328ac-2347-4d6f-83be-268a91880fff"
     }
@@ -22,13 +22,19 @@
         {
           "botMessageId": "ae2e802e-fb73-475e-bbb0-674f8b22e550",
           "nodeType": "BotMessageNode",
-          "id": "eece7b24-0fd8-4b23-a4b1-4ac811433e30"
+          "id": "eece7b24-0fd8-4b23-a4b1-4ac811433e30",
+          "defaultTargetNodeId": "6248c9da-4c4f-4e88-828b-2b0e31fcd86e"
+        },
+        {
+          "botMessageId": "39f23cbd-bd45-4325-8721-e13d35c2ff76",
+          "nodeType": "BotMessageNode",
+          "id": "6248c9da-4c4f-4e88-828b-2b0e31fcd86e"
         }
       ],
       "id": "new_topic_126608a96b814b9da99547ef6fe61ccf",
       "displayName": "Untitled",
       "createdTime": "2022-06-06T00:13:29.4327396Z",
-      "updatedTime": "2022-06-06T00:13:49.131882Z",
+      "updatedTime": "2022-06-06T02:28:05.354441Z",
       "createdUserId": "566328ac-2347-4d6f-83be-268a91880fff",
       "updatedUserId": "566328ac-2347-4d6f-83be-268a91880fff"
     }
@@ -44,6 +50,19 @@
       "id": "ae2e802e-fb73-475e-bbb0-674f8b22e550",
       "createdTime": "2022-06-06T00:13:06.739Z",
       "updatedTime": "2022-06-06T00:13:06.739Z"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "This is a new feature added on DEVA."
+        }
+      },
+      "id": "39f23cbd-bd45-4325-8721-e13d35c2ff76",
+      "createdTime": "2022-06-06T02:27:51.816Z",
+      "updatedTime": "2022-06-06T02:27:51.816Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
     }
   ]
 }
