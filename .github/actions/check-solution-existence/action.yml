@@ -23,9 +23,9 @@ inputs:
     required: true
 
 outputs:
-  check_solution_exists:
+  solution_exists:
     description: "solution existence flag"
-    value: ${{ steps.get-solutions-from-env.outputs.check_solution_exists }}
+    value: ${{ steps.get-solutions-from-env.outputs.solution_exists }}
 
 runs:
   using: "composite"
@@ -48,18 +48,21 @@ runs:
         $tenant_id = "${{ inputs.tenant_id }}"
         $client_id = "${{ inputs.client_id }}"
         $client_secret = "${{ inputs.client_secret }}"
-        $connection = & "$pacFolder\pac.exe" @("auth", "create", "--url", "$environment_url", "--tenant", "$tenant_id", "--applicationId", "$client_id", "--clientSecret", "$client_secret")
+        & "$pacFolder\pac.exe" @("auth", "create", "--url", "$environment_url", "--tenant", "$tenant_id", "--applicationId", "$client_id", "--clientSecret", "$client_secret")
 
         # List all the solutions on the environment
         $result = & "$pacFolder\pac.exe" @("solution", "list")
         $lines = $result -split "`n"
-        $check_solution_exists = $false
+        $solution_exists = $false
 
         # Check if the solution unique name exists
-        For ($i=5; $i -lt $lines.Length - 1; $i++) {
-          $check_solution_exists = $lines[$i] -like ${{ inputs.solution_name }}
+        for ($i=5; $i -lt $lines.Length - 1; $i++) {
+            if ($lines[$i].Contains("${{ inputs.solution_name }}")) {
+                $solution_exists = $true
+                break
+            }
         }
 
         # Return the flag
-        echo "::set-output name=check_solution_exists::$check_solution_exists"
-      shell: powershell
+        echo "::set-output name=solution_exists::$solution_exists"
+      shell: pwsh
