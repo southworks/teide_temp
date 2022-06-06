@@ -1,0 +1,49 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "test topic",
+        "test"
+      ],
+      "dialogId": "new_topic_126608a96b814b9da99547ef6fe61ccf",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_126608a96b814b9da99547ef6fe61ccf",
+      "displayName": "Test Topic",
+      "createdTime": "2022-06-06T00:13:29.4327396Z",
+      "updatedTime": "2022-06-06T00:13:49.131882Z",
+      "createdUserId": "566328ac-2347-4d6f-83be-268a91880fff",
+      "updatedUserId": "566328ac-2347-4d6f-83be-268a91880fff"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "eece7b24-0fd8-4b23-a4b1-4ac811433e30",
+      "messageNodes": [
+        {
+          "botMessageId": "ae2e802e-fb73-475e-bbb0-674f8b22e550",
+          "nodeType": "BotMessageNode",
+          "id": "eece7b24-0fd8-4b23-a4b1-4ac811433e30"
+        }
+      ],
+      "id": "new_topic_126608a96b814b9da99547ef6fe61ccf",
+      "displayName": "Untitled",
+      "createdTime": "2022-06-06T00:13:29.4327396Z",
+      "updatedTime": "2022-06-06T00:13:49.131882Z",
+      "createdUserId": "566328ac-2347-4d6f-83be-268a91880fff",
+      "updatedUserId": "566328ac-2347-4d6f-83be-268a91880fff"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Hi, welcome to the DEVA environment bot."
+        }
+      },
+      "id": "ae2e802e-fb73-475e-bbb0-674f8b22e550",
+      "createdTime": "2022-06-06T00:13:06.739Z",
+      "updatedTime": "2022-06-06T00:13:06.739Z"
+    }
+  ]
+}
