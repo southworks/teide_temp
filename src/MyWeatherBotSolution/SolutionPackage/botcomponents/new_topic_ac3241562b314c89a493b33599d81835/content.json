@@ -9,7 +9,7 @@
       "id": "new_topic_ac3241562b314c89a493b33599d81835",
       "displayName": "Clothes To Wear",
       "createdTime": "2022-06-07T19:42:58.3495735Z",
-      "updatedTime": "2022-06-07T19:42:58.3495735Z",
+      "updatedTime": "2022-06-07T20:30:45.1270004Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -22,6 +22,12 @@
           "botMessageId": "481aeb59-d8f3-4904-b23d-c8023f90950d",
           "nodeType": "BotMessageNode",
           "id": "350a387e-9960-48bc-8ebc-c939a6e0f622",
+          "defaultTargetNodeId": "7776259b-9c6e-4b12-bbdf-991f025014aa"
+        },
+        {
+          "botMessageId": "34675d80-2907-4671-90f1-ed0e1d9576f9",
+          "nodeType": "BotMessageNode",
+          "id": "7776259b-9c6e-4b12-bbdf-991f025014aa",
           "defaultTargetNodeId": "0d9bd2b4-a6a7-47e3-89f1-e71351295eab"
         }
       ],
@@ -35,7 +41,7 @@
       "id": "new_topic_ac3241562b314c89a493b33599d81835",
       "displayName": "Untitled",
       "createdTime": "2022-06-07T19:42:58.3495735Z",
-      "updatedTime": "2022-06-07T19:42:58.3495735Z",
+      "updatedTime": "2022-06-07T20:30:45.1270004Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -51,6 +57,19 @@
       "id": "481aeb59-d8f3-4904-b23d-c8023f90950d",
       "createdTime": "2022-06-07T19:42:08.809Z",
       "updatedTime": "2022-06-07T19:42:08.809Z"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Wear something comfortable! (From DevA)"
+        }
+      },
+      "id": "34675d80-2907-4671-90f1-ed0e1d9576f9",
+      "createdTime": "2022-06-07T20:30:25.879Z",
+      "updatedTime": "2022-06-07T20:30:25.879Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
     }
   ]
 }
