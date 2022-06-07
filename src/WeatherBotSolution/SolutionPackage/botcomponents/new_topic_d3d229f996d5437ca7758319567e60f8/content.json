@@ -1,0 +1,128 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "Will I need warm clothes?",
+        "What dress should I wear?",
+        "What clothes should I wear?"
+      ],
+      "dialogId": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "displayName": "Clothes to wear",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T18:20:10.7873914Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "c3d129d3-daec-4c75-b988-aebeb5fd66f3",
+      "messageNodes": [
+        {
+          "botMessageId": "247b6adf-e7f3-41aa-a0d2-8054c67c5f2f",
+          "nodeType": "BotMessageNode",
+          "id": "900914cd-3b42-4167-8959-d04189bcd97a",
+          "defaultTargetNodeId": "1d835b65-1fd3-478a-a2ba-cf70488a0005"
+        },
+        {
+          "botMessageId": "212fe42a-b19a-43a4-8eb5-de9ef8a25ea2",
+          "nodeType": "BotMessageNode",
+          "id": "199aa322-481b-4338-8fa0-adf11839fbef",
+          "defaultTargetNodeId": "1d835b65-1fd3-478a-a2ba-cf70488a0005"
+        }
+      ],
+      "dialogChangeNodes": [
+        {
+          "targetDialogId": "new_topic_e16079c43bb64b1b874fc2d0bc54dcb1_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess",
+          "nodeType": "DialogChangeNode",
+          "id": "1d835b65-1fd3-478a-a2ba-cf70488a0005"
+        }
+      ],
+      "questionNodes": [
+        {
+          "contextVariableId": "19aba994-01f6-4dee-b087-4a8a92d016c2",
+          "nodeType": "QuestionNode",
+          "id": "c3d129d3-daec-4c75-b988-aebeb5fd66f3",
+          "routes": [
+            {
+              "expression": "@equals(parameters('19aba994-01f6-4dee-b087-4a8a92d016c2'), '98052')",
+              "targetNodeId": "900914cd-3b42-4167-8959-d04189bcd97a"
+            }
+          ],
+          "defaultTargetNodeId": "199aa322-481b-4338-8fa0-adf11839fbef"
+        }
+      ],
+      "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "displayName": "Untitled",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T18:20:10.7873914Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please enter the zipcode of your destination."
+        }
+      },
+      "id": "f1b03812-150a-468d-ae7f-73b6426a86c8",
+      "createdTime": "2022-06-07T15:52:40.845Z",
+      "updatedTime": "2022-06-07T15:52:40.845Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Pack a rain jacket!"
+        }
+      },
+      "id": "247b6adf-e7f3-41aa-a0d2-8054c67c5f2f",
+      "createdTime": "2022-06-07T18:18:49.183Z",
+      "updatedTime": "2022-06-07T18:18:49.183Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "It's summer - so pack a hat and shorts!"
+        }
+      },
+      "id": "212fe42a-b19a-43a4-8eb5-de9ef8a25ea2",
+      "createdTime": "2022-06-07T18:19:02.804Z",
+      "updatedTime": "2022-06-07T18:19:02.804Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    }
+  ],
+  "contextVariables": [
+    {
+      "systemType": "ZipCode",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "f1b03812-150a-468d-ae7f-73b6426a86c8"
+        ]
+      },
+      "isGlobal": false,
+      "id": "19aba994-01f6-4dee-b087-4a8a92d016c2",
+      "displayName": "DestZipCode",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T18:20:10.7873914Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ]
+}
