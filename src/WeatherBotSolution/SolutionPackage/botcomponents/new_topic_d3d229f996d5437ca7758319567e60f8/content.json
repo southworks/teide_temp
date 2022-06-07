@@ -1,0 +1,240 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "Will I need warm clothes?",
+        "What dress should I wear?",
+        "What clothes should I wear?"
+      ],
+      "dialogId": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "displayName": "Clothes to wear",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "c3d129d3-daec-4c75-b988-aebeb5fd66f3",
+      "messageNodes": [
+        {
+          "botMessageId": "2d916a85-0f0f-4bb5-b316-169c021526c3",
+          "nodeType": "BotMessageNode",
+          "id": "36abb282-7a1c-40f6-a90b-56d50510e1cf"
+        }
+      ],
+      "actionNodes": [
+        {
+          "contextVariableId": "d63c546b-542c-48ef-bfe6-639134ea3777",
+          "nodeType": "ActionNode",
+          "inputParameterVariableIdMap": {
+            "text": "DestZipCode"
+          },
+          "outputExpressionVariableIds": [
+            "bdd4c406-2a81-4208-8d24-d937b4af0889",
+            "4ea904e0-f21e-425e-ab19-b5ba08772892",
+            "df6809be-683c-46b1-9fd8-312fc9583587"
+          ],
+          "id": "f021a5f8-1b1e-4748-a911-5e1f60b2aeae",
+          "defaultTargetNodeId": "36abb282-7a1c-40f6-a90b-56d50510e1cf"
+        }
+      ],
+      "questionNodes": [
+        {
+          "contextVariableId": "19aba994-01f6-4dee-b087-4a8a92d016c2",
+          "nodeType": "QuestionNode",
+          "id": "c3d129d3-daec-4c75-b988-aebeb5fd66f3",
+          "defaultTargetNodeId": "f021a5f8-1b1e-4748-a911-5e1f60b2aeae"
+        }
+      ],
+      "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "displayName": "Untitled",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please enter the zipcode of your destination."
+        }
+      },
+      "id": "f1b03812-150a-468d-ae7f-73b6426a86c8",
+      "createdTime": "2022-06-07T15:52:40.845Z",
+      "updatedTime": "2022-06-07T15:52:40.845Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "{bdd4c406-2a81-4208-8d24-d937b4af0889} has a high of {4ea904e0-f21e-425e-ab19-b5ba08772892}F and a low of {df6809be-683c-46b1-9fd8-312fc9583587}F."
+        }
+      },
+      "id": "2d916a85-0f0f-4bb5-b316-169c021526c3",
+      "createdTime": "2022-06-07T15:59:29.34Z",
+      "updatedTime": "2022-06-07T15:59:29.34Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    }
+  ],
+  "actionDefinitions": [
+    {
+      "timeoutInSeconds": 60,
+      "retryCount": 1,
+      "method": 2,
+      "headers": {
+        "accept": "application/json"
+      },
+      "bodyContent": "{\"text\":\"DestZipCode\"}",
+      "actionType": "Flow",
+      "flowMetadata": {
+        "id": "ebda4d80-7ae6-ec11-bb3c-000d3a335437",
+        "title": "GetWeather",
+        "description": "Call this flow from Power Virtual Agents.",
+        "httpMethod": 2,
+        "inputParameters": [
+          {
+            "name": "ZipCode",
+            "id": "text",
+            "type": "String",
+            "optional": false
+          }
+        ],
+        "outputParameters": [
+          {
+            "name": "Place",
+            "id": "place",
+            "type": "String",
+            "optional": true
+          },
+          {
+            "name": "TempHigh",
+            "id": "temphigh",
+            "type": "Number",
+            "optional": true
+          },
+          {
+            "name": "TempLow",
+            "id": "templow",
+            "type": "Number",
+            "optional": true
+          }
+        ],
+        "outputSchemaType": "Json",
+        "createdTime": "2022-06-07T15:57:16Z",
+        "isEnabled": true,
+        "lastModifiedTime": "2022-06-07T15:57:52Z",
+        "versionNumber": 1142560
+      },
+      "id": "abe03f47-961b-4895-80f2-ef658a0ff8b4",
+      "displayName": "GetWeather",
+      "description": "Call this flow from Power Virtual Agents.",
+      "createdTime": "2022-06-07T15:58:50.568Z",
+      "updatedTime": "2022-06-07T15:58:50.568Z"
+    }
+  ],
+  "contextVariables": [
+    {
+      "systemType": "ZipCode",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "f1b03812-150a-468d-ae7f-73b6426a86c8"
+        ]
+      },
+      "isGlobal": false,
+      "id": "19aba994-01f6-4dee-b087-4a8a92d016c2",
+      "displayName": "DestZipCode",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    },
+    {
+      "customTypeId": "500afc44-8492-4848-b0e6-51997b5d3071",
+      "initializerType": "Action",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "actionId": "abe03f47-961b-4895-80f2-ef658a0ff8b4",
+      "isGlobal": false,
+      "id": "d63c546b-542c-48ef-bfe6-639134ea3777",
+      "displayName": "",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('d63c546b-542c-48ef-bfe6-639134ea3777')['place']",
+      "isGlobal": false,
+      "id": "bdd4c406-2a81-4208-8d24-d937b4af0889",
+      "displayName": "Place",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    },
+    {
+      "systemType": "Number",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('d63c546b-542c-48ef-bfe6-639134ea3777')['temphigh']",
+      "isGlobal": false,
+      "id": "4ea904e0-f21e-425e-ab19-b5ba08772892",
+      "displayName": "TempHigh",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    },
+    {
+      "systemType": "Number",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('d63c546b-542c-48ef-bfe6-639134ea3777')['templow']",
+      "isGlobal": false,
+      "id": "df6809be-683c-46b1-9fd8-312fc9583587",
+      "displayName": "TempLow",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-07T16:05:31.7190698Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "jsonTypes": [
+    {
+      "customTypeSchema": "Json",
+      "id": "500afc44-8492-4848-b0e6-51997b5d3071",
+      "displayName": "Response Json Type for Flow - GetWeather",
+      "createdTime": "2022-06-07T15:58:50.568Z",
+      "updatedTime": "2022-06-07T15:58:50.568Z"
+    }
+  ]
+}
