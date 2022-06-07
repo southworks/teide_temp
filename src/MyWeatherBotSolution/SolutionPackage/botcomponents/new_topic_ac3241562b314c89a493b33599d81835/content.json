@@ -1,0 +1,56 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "Wear"
+      ],
+      "dialogId": "new_topic_ac3241562b314c89a493b33599d81835",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_ac3241562b314c89a493b33599d81835",
+      "displayName": "Clothes To Wear",
+      "createdTime": "2022-06-07T19:42:58.3495735Z",
+      "updatedTime": "2022-06-07T19:42:58.3495735Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "350a387e-9960-48bc-8ebc-c939a6e0f622",
+      "messageNodes": [
+        {
+          "botMessageId": "481aeb59-d8f3-4904-b23d-c8023f90950d",
+          "nodeType": "BotMessageNode",
+          "id": "350a387e-9960-48bc-8ebc-c939a6e0f622",
+          "defaultTargetNodeId": "0d9bd2b4-a6a7-47e3-89f1-e71351295eab"
+        }
+      ],
+      "dialogChangeNodes": [
+        {
+          "targetDialogId": "new_topic_5562ee402c384d4ca341f5b4f24ccbca_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess",
+          "nodeType": "DialogChangeNode",
+          "id": "0d9bd2b4-a6a7-47e3-89f1-e71351295eab"
+        }
+      ],
+      "id": "new_topic_ac3241562b314c89a493b33599d81835",
+      "displayName": "Untitled",
+      "createdTime": "2022-06-07T19:42:58.3495735Z",
+      "updatedTime": "2022-06-07T19:42:58.3495735Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Its summer so please wear something comfortable."
+        }
+      },
+      "id": "481aeb59-d8f3-4904-b23d-c8023f90950d",
+      "createdTime": "2022-06-07T19:42:08.809Z",
+      "updatedTime": "2022-06-07T19:42:08.809Z"
+    }
+  ]
+}
