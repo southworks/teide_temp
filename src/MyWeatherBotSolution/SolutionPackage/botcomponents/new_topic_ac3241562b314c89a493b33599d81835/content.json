@@ -9,7 +9,7 @@
       "id": "new_topic_ac3241562b314c89a493b33599d81835",
       "displayName": "Clothes To Wear",
       "createdTime": "2022-06-07T19:42:58.3495735Z",
-      "updatedTime": "2022-06-07T20:29:28.8000987Z",
+      "updatedTime": "2022-06-07T21:55:37.7418967Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -41,7 +41,7 @@
       "id": "new_topic_ac3241562b314c89a493b33599d81835",
       "displayName": "Untitled",
       "createdTime": "2022-06-07T19:42:58.3495735Z",
-      "updatedTime": "2022-06-07T20:29:28.8000987Z",
+      "updatedTime": "2022-06-07T21:55:37.7418967Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -62,7 +62,7 @@
       "channelContent": {
         "web": {
           "contentFormat": "Markdown",
-          "content": "Get into something comfortable (change from DevB)"
+          "content": "Get into something comfortable."
         }
       },
       "id": "6699f810-9a6a-4b0f-9f9e-0744cd91654a",
