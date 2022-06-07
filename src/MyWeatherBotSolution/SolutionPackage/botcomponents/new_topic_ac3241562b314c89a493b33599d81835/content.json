@@ -9,7 +9,7 @@
       "id": "new_topic_ac3241562b314c89a493b33599d81835",
       "displayName": "Clothes To Wear",
       "createdTime": "2022-06-07T19:42:58.3495735Z",
-      "updatedTime": "2022-06-07T20:30:45.1270004Z",
+      "updatedTime": "2022-06-07T20:29:28.8000987Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -22,12 +22,12 @@
           "botMessageId": "481aeb59-d8f3-4904-b23d-c8023f90950d",
           "nodeType": "BotMessageNode",
           "id": "350a387e-9960-48bc-8ebc-c939a6e0f622",
-          "defaultTargetNodeId": "7776259b-9c6e-4b12-bbdf-991f025014aa"
+          "defaultTargetNodeId": "e60e5efd-9da6-4e49-84ca-4cb132ec669d"
         },
         {
-          "botMessageId": "34675d80-2907-4671-90f1-ed0e1d9576f9",
+          "botMessageId": "6699f810-9a6a-4b0f-9f9e-0744cd91654a",
           "nodeType": "BotMessageNode",
-          "id": "7776259b-9c6e-4b12-bbdf-991f025014aa",
+          "id": "e60e5efd-9da6-4e49-84ca-4cb132ec669d",
           "defaultTargetNodeId": "0d9bd2b4-a6a7-47e3-89f1-e71351295eab"
         }
       ],
@@ -41,7 +41,7 @@
       "id": "new_topic_ac3241562b314c89a493b33599d81835",
       "displayName": "Untitled",
       "createdTime": "2022-06-07T19:42:58.3495735Z",
-      "updatedTime": "2022-06-07T20:30:45.1270004Z",
+      "updatedTime": "2022-06-07T20:29:28.8000987Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -62,12 +62,12 @@
       "channelContent": {
         "web": {
           "contentFormat": "Markdown",
-          "content": "Wear something comfortable! (From DevA)"
+          "content": "Get into something comfortable (change from DevB)"
         }
       },
-      "id": "34675d80-2907-4671-90f1-ed0e1d9576f9",
-      "createdTime": "2022-06-07T20:30:25.879Z",
-      "updatedTime": "2022-06-07T20:30:25.879Z",
+      "id": "6699f810-9a6a-4b0f-9f9e-0744cd91654a",
+      "createdTime": "2022-06-07T20:29:12.245Z",
+      "updatedTime": "2022-06-07T20:29:12.245Z",
       "createdUserId": "user-0",
       "updatedUserId": "user-0"
     }
