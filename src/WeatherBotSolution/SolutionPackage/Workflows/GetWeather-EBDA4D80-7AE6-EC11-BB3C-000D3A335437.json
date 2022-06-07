@@ -1,0 +1,118 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_msnweather": {
+        "api": {
+          "name": "shared_msnweather"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cre0a_sharedmsnweather_40a68"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "actions": {
+        "Get_forecast_for_today": {
+          "inputs": {
+            "authentication": "@parameters('$authentication')",
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_msnweather",
+              "connectionName": "shared_msnweather",
+              "operationId": "TodaysForecast"
+            },
+            "parameters": {
+              "Location": "98052",
+              "units": "Imperial"
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "9d27e1db-81bb-49c2-9f12-a0d6da75b379"
+          },
+          "runAfter": {},
+          "type": "OpenApiConnection"
+        },
+        "Return_value(s)_to_Power_Virtual_Agents": {
+          "inputs": {
+            "body": {
+              "place": "@outputs('Get_forecast_for_today')?['body/responses/source/location']",
+              "temphigh": "@{outputs('Get_forecast_for_today')?['body/responses/daily/tempHi']}",
+              "templow": "@{outputs('Get_forecast_for_today')?['body/responses/daily/tempLo']}"
+            },
+            "schema": {
+              "properties": {
+                "place": {
+                  "title": "Place",
+                  "type": "string",
+                  "x-ms-dynamically-added": true
+                },
+                "temphigh": {
+                  "title": "TempHigh",
+                  "type": "number",
+                  "x-ms-dynamically-added": true
+                },
+                "templow": {
+                  "title": "TempLow",
+                  "type": "number",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "type": "object"
+            },
+            "statusCode": 200
+          },
+          "kind": "VirtualAgent",
+          "metadata": {
+            "operationMetadataId": "e305daf2-4304-4c3e-8822-073a4d82c78e"
+          },
+          "runAfter": {
+            "Get_forecast_for_today": [
+              "Succeeded"
+            ]
+          },
+          "type": "Response"
+        }
+      },
+      "contentVersion": "1.0.0.0",
+      "outputs": {},
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "inputs": {
+            "schema": {
+              "properties": {
+                "text": {
+                  "description": "Please enter your input",
+                  "title": "ZipCode",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "text"
+              ],
+              "type": "object"
+            }
+          },
+          "kind": "VirtualAgent",
+          "metadata": {
+            "operationMetadataId": "ec57a942-7d87-4d1b-9754-74393ef09eae"
+          },
+          "type": "Request"
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}
