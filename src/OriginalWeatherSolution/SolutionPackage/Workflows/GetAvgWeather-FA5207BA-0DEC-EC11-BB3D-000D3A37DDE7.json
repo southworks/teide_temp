@@ -1,0 +1,106 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_msnweather": {
+        "api": {
+          "name": "shared_msnweather"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cre0a_sharedmsnweather_78ccc"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "actions": {
+        "Get_forecast_for_today": {
+          "inputs": {
+            "authentication": "@parameters('$authentication')",
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_msnweather",
+              "connectionName": "shared_msnweather",
+              "operationId": "TodaysForecast"
+            },
+            "parameters": {
+              "Location": "@triggerBody()['text']",
+              "units": "Imperial"
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "b32c8630-93ee-4223-bcee-b4118a750621"
+          },
+          "runAfter": {},
+          "type": "OpenApiConnection"
+        },
+        "Return_value(s)_to_Power_Virtual_Agents": {
+          "inputs": {
+            "body": {
+              "avgtemp": "@{div(add(outputs('Get_forecast_for_today')?['body/responses/daily/tempLo'], outputs('Get_forecast_for_today')?['body/responses/daily/tempHi']),2)}"
+            },
+            "schema": {
+              "properties": {
+                "avgtemp": {
+                  "title": "AvgTemp",
+                  "type": "number",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "type": "object"
+            },
+            "statusCode": 200
+          },
+          "kind": "VirtualAgent",
+          "metadata": {
+            "operationMetadataId": "470b4de2-5d9d-4bed-8cd7-3d99cf7fe967"
+          },
+          "runAfter": {
+            "Get_forecast_for_today": [
+              "Succeeded"
+            ]
+          },
+          "type": "Response"
+        }
+      },
+      "contentVersion": "1.0.0.0",
+      "outputs": {},
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "inputs": {
+            "schema": {
+              "properties": {
+                "text": {
+                  "description": "Please enter your input",
+                  "title": "ZipCode",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "text"
+              ],
+              "type": "object"
+            }
+          },
+          "kind": "VirtualAgent",
+          "metadata": {
+            "operationMetadataId": "55eabd6a-938a-445e-b99b-be28b37aa945"
+          },
+          "type": "Request"
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}
