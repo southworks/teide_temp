@@ -1,0 +1,227 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "Will I need warm clothes?",
+        "What dress should I wear?",
+        "What clothes should I wear?"
+      ],
+      "dialogId": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "displayName": "Clothes to wear",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "c3d129d3-daec-4c75-b988-aebeb5fd66f3",
+      "messageNodes": [
+        {
+          "botMessageId": "247b6adf-e7f3-41aa-a0d2-8054c67c5f2f",
+          "nodeType": "BotMessageNode",
+          "id": "900914cd-3b42-4167-8959-d04189bcd97a",
+          "defaultTargetNodeId": "1d835b65-1fd3-478a-a2ba-cf70488a0005"
+        },
+        {
+          "botMessageId": "212fe42a-b19a-43a4-8eb5-de9ef8a25ea2",
+          "nodeType": "BotMessageNode",
+          "id": "199aa322-481b-4338-8fa0-adf11839fbef",
+          "defaultTargetNodeId": "1d835b65-1fd3-478a-a2ba-cf70488a0005"
+        }
+      ],
+      "actionNodes": [
+        {
+          "contextVariableId": "e523ebaf-b453-421c-b27c-c20aaa48f71f",
+          "nodeType": "ActionNode",
+          "inputParameterVariableIdMap": {
+            "text": "{19aba994-01f6-4dee-b087-4a8a92d016c2}"
+          },
+          "outputExpressionVariableIds": [
+            "af2b575c-2123-4fe8-9e89-6685601705c2"
+          ],
+          "id": "848f90be-8c41-4482-b53b-24f97bb48b49",
+          "routes": [
+            {
+              "expression": "@less(parameters('af2b575c-2123-4fe8-9e89-6685601705c2'), 50)",
+              "targetNodeId": "900914cd-3b42-4167-8959-d04189bcd97a"
+            }
+          ],
+          "defaultTargetNodeId": "199aa322-481b-4338-8fa0-adf11839fbef"
+        }
+      ],
+      "dialogChangeNodes": [
+        {
+          "targetDialogId": "new_topic_e16079c43bb64b1b874fc2d0bc54dcb1_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess",
+          "nodeType": "DialogChangeNode",
+          "id": "1d835b65-1fd3-478a-a2ba-cf70488a0005"
+        }
+      ],
+      "questionNodes": [
+        {
+          "contextVariableId": "19aba994-01f6-4dee-b087-4a8a92d016c2",
+          "nodeType": "QuestionNode",
+          "id": "c3d129d3-daec-4c75-b988-aebeb5fd66f3",
+          "defaultTargetNodeId": "848f90be-8c41-4482-b53b-24f97bb48b49"
+        }
+      ],
+      "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
+      "displayName": "Untitled",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please enter the zipcode of your destination."
+        }
+      },
+      "id": "f1b03812-150a-468d-ae7f-73b6426a86c8",
+      "createdTime": "2022-06-07T15:52:40.845Z",
+      "updatedTime": "2022-06-07T15:52:40.845Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Pack a warm jacket!"
+        }
+      },
+      "id": "247b6adf-e7f3-41aa-a0d2-8054c67c5f2f",
+      "createdTime": "2022-06-07T18:18:49.183Z",
+      "updatedTime": "2022-06-07T18:18:49.183Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "It's summer - so pack a hat and shorts!"
+        }
+      },
+      "id": "212fe42a-b19a-43a4-8eb5-de9ef8a25ea2",
+      "createdTime": "2022-06-07T18:19:02.804Z",
+      "updatedTime": "2022-06-07T18:19:02.804Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    }
+  ],
+  "actionDefinitions": [
+    {
+      "timeoutInSeconds": 60,
+      "retryCount": 1,
+      "method": 2,
+      "headers": {
+        "accept": "application/json"
+      },
+      "bodyContent": "{\"text\":\"{19aba994-01f6-4dee-b087-4a8a92d016c2}\"}",
+      "actionType": "Flow",
+      "flowMetadata": {
+        "id": "fa5207ba-0dec-ec11-bb3d-000d3a37dde7",
+        "title": "GetAvgWeather",
+        "description": "Call this flow from Power Virtual Agents.",
+        "httpMethod": 2,
+        "inputParameters": [
+          {
+            "name": "ZipCode",
+            "id": "text",
+            "type": "String",
+            "optional": false
+          }
+        ],
+        "outputParameters": [
+          {
+            "name": "AvgTemp",
+            "id": "avgtemp",
+            "type": "Number",
+            "optional": true
+          }
+        ],
+        "outputSchemaType": "Json",
+        "createdTime": "2022-06-14T18:13:45Z",
+        "isEnabled": true,
+        "lastModifiedTime": "2022-06-14T18:14:16Z",
+        "versionNumber": 1270068
+      },
+      "id": "071f901c-53ce-4efb-830f-44696c5ae454",
+      "displayName": "GetAvgWeather",
+      "description": "Call this flow from Power Virtual Agents.",
+      "createdTime": "2022-06-14T18:15:31.214Z",
+      "updatedTime": "2022-06-14T18:15:31.214Z"
+    }
+  ],
+  "contextVariables": [
+    {
+      "systemType": "None",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "f1b03812-150a-468d-ae7f-73b6426a86c8"
+        ]
+      },
+      "isGlobal": false,
+      "id": "19aba994-01f6-4dee-b087-4a8a92d016c2",
+      "displayName": "DestZipCode",
+      "createdTime": "2022-06-07T16:00:02.4589885Z",
+      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    },
+    {
+      "customTypeId": "d3079a7f-a4e0-4547-ac38-e6e9eebf11ee",
+      "initializerType": "Action",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "actionId": "071f901c-53ce-4efb-830f-44696c5ae454",
+      "isGlobal": false,
+      "id": "e523ebaf-b453-421c-b27c-c20aaa48f71f",
+      "displayName": "",
+      "createdTime": "2022-06-14T18:15:31.215Z",
+      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    },
+    {
+      "systemType": "Number",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('e523ebaf-b453-421c-b27c-c20aaa48f71f')['avgtemp']",
+      "isGlobal": false,
+      "id": "af2b575c-2123-4fe8-9e89-6685601705c2",
+      "displayName": "AvgTemp",
+      "createdTime": "2022-06-14T18:15:31.216Z",
+      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
+    }
+  ],
+  "jsonTypes": [
+    {
+      "customTypeSchema": "Json",
+      "id": "d3079a7f-a4e0-4547-ac38-e6e9eebf11ee",
+      "displayName": "Response Json Type for Flow - GetAvgWeather",
+      "createdTime": "2022-06-14T18:15:31.215Z",
+      "updatedTime": "2022-06-14T18:15:31.215Z"
+    }
+  ]
+}
