@@ -11,7 +11,7 @@
       "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
       "displayName": "Clothes to wear",
       "createdTime": "2022-06-07T16:00:02.4589885Z",
-      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "updatedTime": "2022-06-16T23:54:12.931794Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -71,7 +71,7 @@
       "id": "new_topic_d3d229f996d5437ca7758319567e60f8",
       "displayName": "Untitled",
       "createdTime": "2022-06-07T16:00:02.4589885Z",
-      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "updatedTime": "2022-06-16T23:54:12.931794Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
@@ -94,7 +94,7 @@
       "channelContent": {
         "web": {
           "contentFormat": "Markdown",
-          "content": "Pack a warm jacket!"
+          "content": "Average temp is {af2b575c-2123-4fe8-9e89-6685601705c2}, please pack a warm jacket!"
         }
       },
       "id": "247b6adf-e7f3-41aa-a0d2-8054c67c5f2f",
@@ -107,7 +107,7 @@
       "channelContent": {
         "web": {
           "contentFormat": "Markdown",
-          "content": "It's summer - so pack a hat and shorts!"
+          "content": "Average temp is {af2b575c-2123-4fe8-9e89-6685601705c2}. Looks like it's summer - so pack a hat and shorts!"
         }
       },
       "id": "212fe42a-b19a-43a4-8eb5-de9ef8a25ea2",
@@ -178,7 +178,7 @@
       "id": "19aba994-01f6-4dee-b087-4a8a92d016c2",
       "displayName": "DestZipCode",
       "createdTime": "2022-06-07T16:00:02.4589885Z",
-      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "updatedTime": "2022-06-16T23:54:12.931794Z",
       "createdUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     },
@@ -194,7 +194,7 @@
       "id": "e523ebaf-b453-421c-b27c-c20aaa48f71f",
       "displayName": "",
       "createdTime": "2022-06-14T18:15:31.215Z",
-      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "updatedTime": "2022-06-16T23:54:12.931794Z",
       "createdUserId": "user-0",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     },
@@ -210,7 +210,7 @@
       "id": "af2b575c-2123-4fe8-9e89-6685601705c2",
       "displayName": "AvgTemp",
       "createdTime": "2022-06-14T18:15:31.216Z",
-      "updatedTime": "2022-06-14T18:23:00.9189426Z",
+      "updatedTime": "2022-06-16T23:54:12.931794Z",
       "createdUserId": "user-0",
       "updatedUserId": "a0260c59-0c7f-46e6-9099-e046eadf6c08"
     }
